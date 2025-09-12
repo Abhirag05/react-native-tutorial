@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import Logo from '../assets/img/logo.jpg'
+import { Link } from 'expo-router'
 const Home = () => {
   return (
     <View style={styles.container}>
@@ -12,7 +13,8 @@ const Home = () => {
         <View style={styles.card}>
             <Text style={{ color:'white' }}>This is the second view</Text>
         </View>
-
+     <Link href="/about">Go to About Page</Link>
+     <Link href="/contact">Go to Contact Page</Link>
     </View>
     
   )
